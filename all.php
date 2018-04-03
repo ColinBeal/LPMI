@@ -7,12 +7,20 @@
     exit;
   }
 
-  if (!isset($_SESSION["login"]) && !isset($_SESSION["password"]))
+  if (!isset($_SESSION["login"]) OR !isset($_SESSION["password"]))
   {
     if (isset($_POST["login"]) && isset($_POST["password"]))
     {
-      $password = htmlentities($_POST["password"]);
-      $login = htmlentities($_POST["login"]);
+      if (preg_match("/[^A-Za-z0-9]/", $_POST["login"]))
+      {
+        header('Location: ?log=nonaut');
+        exit();
+      }
+      else
+      {
+        $password = htmlentities($_POST["password"]);
+        $login = htmlentities($_POST["login"]);
+      }
 
       if ($_POST["submit"]=="enregistrement")
       {
@@ -22,6 +30,7 @@
         {
           $_SESSION["login"] = $login;
           $_SESSION["password"] = $password;
+          $_SESSION["type"] = "visiteur";
           header('Location: ?');
           exit;
         }
@@ -30,25 +39,19 @@
           header('Location: ?log=allex');
           exit;
         }
-        mysqli_close($conn);
       }
 
       if($_POST["submit"]=="connexion")
       {
-
-        $sql = "SELECT id FROM utilisateurs WHERE login='".$login."' AND pass='".$password."'";
+        $sql = "SELECT id, type FROM utilisateurs WHERE login='".$login."' AND pass='".$password."'";
         $result2 = mysqli_query($conn, $sql);
-        if(mysqli_num_rows($result2)>0)
+        if(mysqli_num_rows($result2) > 0)
         {
+          $row2 = mysqli_fetch_assoc($result2);
           $_SESSION["login"] = $login;
           $_SESSION["password"] = $password;
-<<<<<<< HEAD
-
-          header('Location: ?');
-=======
           $_SESSION["type"] = $row2["type"];
           header('Location: espace.php');
->>>>>>> 0fe9c8ef050b4892bce16ccb3a734db8e8d98000
           exit;
         }
         else
@@ -61,8 +64,6 @@
     }
 
     echo "
-
-
     <form action='#' method='post'>
   <div class='form-group row'>
     <label for='inputlogin' class='col-sm-2 col-form-label'>Login</label>
@@ -82,13 +83,16 @@
       </div>
     ";
 
-      if(isset($_GET["log"]))
-      {
-        if($_GET["log"]=="allex")
-          echo "Ce login est déja utilisé";
-        if($_GET["log"]=="nonex")
-          echo "Ce compte n'existe pas ou mot de passe incorrect";
+    if(isset($_GET["log"]))
+    {
+      if($_GET["log"]=="allex")
+        echo "Erreur d'Enregistrement";
+      if($_GET["log"]=="nonex")
+        echo "Erreur de Connexion";
+      if ($_GET["log"]=="nonaut") {
+        echo "Erreur de Connexion";
       }
+    }
 
     echo "</form>";
   }

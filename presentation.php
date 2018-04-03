@@ -14,37 +14,27 @@
       <?php
         include "entete_page.php";
       ?>
-<div class="container-fluid ">
-  <div class="contenttitle row">
-      <h1 class="underline"> Présentation de la licence </h1>
-  <div class="col-md-9">
-    <p id="editor" contenteditable="true">
+
+    <button class="collapsible">Description</button>
+    <div class="content_coll">
       <br/>
-      <strong>Soyez acteur de la transformation numérique de notre société</strong>
-      <br/><br/>
-      La Licence Professionnelle Applications Web forme depuis 2001 des assistants ingénieurs et des cadres spécialisés dans le domaine de l’Internet. Il s’agit majoritairement de développeurs spécialistes des technologies logicielles pour la construction d'applications Web et Web mobile (applications réparties avec une forte interaction utilisateur).
-
+      <p>
+        <strong>Soyez acteur de la transformation numérique de notre société</strong>
+        <br/><br/>
+        La Licence Professionnelle Applications Web forme depuis 2001 des assistants ingénieurs et des cadres spécialisés dans le domaine de l’Internet. Il s’agit majoritairement de développeurs spécialistes des technologies logicielles pour la construction d'applications Web et Web mobile (applications réparties avec une forte interaction utilisateur).
+        <br/><br/>
+        Orientée « métier », notre licence professionnelle met l’accent sur de solides acquis techniques mais également sur des savoirs dans les domaines économiques, sociaux et relationnels.
+        <br/><br/>
+        La formation de 450 heures développe une solide expérience de l’entreprise à travers les projets et le stage en entreprise d’une durée minimum de 14 semaines (en général 5 mois).
+        <br/><br/>
+        <strong>Alternance, se former autrement</strong>
+        <br/><br/>
+        Formation qui conjugue insertion professionnelle via les Contrats de Professionnalisation et acquisition d’une licence en systèmes Intra/Internet pour l’entreprise.
+      </p>
+      <br/>
     </div>
-  </div>
 
 
-</div>
-<div class="content">
-
-  <button class="collapsible">Description</button>
-  <div class="content_coll">
-    <br/>
-    <p>
-      Orientée « métier », notre licence professionnelle met l’accent sur de solides acquis techniques mais également sur des savoirs dans les domaines économiques, sociaux et relationnels.
-      <br/><br/>
-      La formation de 450 heures développe une solide expérience de l’entreprise à travers les projets et le stage en entreprise d’une durée minimum de 14 semaines (en général 5 mois).
-      <br/><br/>
-      <strong>Alternance, se former autrement</strong>
-      <br/><br/>
-      Formation qui conjugue insertion professionnelle via les Contrats de Professionnalisation et acquisition d’une licence en systèmes Intra/Internet pour l’entreprise.
-    </p>
-    <br/>
-  </div>
 
     <button class="collapsible">Programme</button>
     <div class="content_coll">
@@ -129,10 +119,9 @@
       </p>
       <br/>
     </div>
-    </div>
 
 
-    <script src="ckeditor/ckeditor.js"></script>
+
     <script src="js/jquery.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/script_perso.js"></script>
