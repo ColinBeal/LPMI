@@ -38,7 +38,7 @@
                 <div class='content-bleu row'>
                   <div class='col-md-6 textecontent' data-aos='fade-down'>
                     <h3 class='underline' data-aos='fade-down'>".$row["nomUE"]."</h3><br/>
-                    <p id='editor' contenteditable='true' data-aos='zoom-in-right'>".$row["descriptionUE"]."</p><br/>
+                    <p data-aos='zoom-in-right'>".$row["descriptionUE"]."</p><br/>
                     <p data-aos='fade'><a href=ueparticulier.php?id=".$row["id"]." class='underline'>Découvrir cette UE </a></p>
                   </div>
                   <div class='col-md-5 col-sm-12 col-xs-12 content-img' data-aos='zoom-in'>

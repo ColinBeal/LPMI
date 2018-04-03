@@ -13,7 +13,6 @@
   <body>
     <?php
       include "entete_page.php";
-      include "hero.php"
     ?>
 
         <div class="content-bleu row">

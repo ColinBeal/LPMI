@@ -21,11 +21,11 @@ for (i = 0; i < coll.length; i++)
     if (content.style.maxHeight)
     {
       content.style.maxHeight = null;
-      
+      content.style.border = "none";
     }
     else
     {
-
+      content.style.border = "2px solid #932C3E";
       content.style.maxHeight = content.scrollHeight + "px";
     }
   });
