@@ -11,7 +11,7 @@
         <a href="ue.php"> Unité d'enseignements</a>
       </div>
       <div class="col-md-1 col-sm-hidden col-xs-hidden nav">
-        <a href="projet.php">Projets</a>
+        <a href="liste_projet.php">Projets</a>
       </div>
       <div class="col-md-1 col-sm-hidden col-xs-hidden nav">
         <a href="http://informatique-ufrst.u-bourgogne.fr/formations/detail/2">Candidater</a>

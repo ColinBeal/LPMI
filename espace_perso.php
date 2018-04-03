@@ -23,8 +23,6 @@
           ?>
         </div>
         <?php
-          include "entete_page.php";
-
           if ($_SESSION["type"]=="admin")
           {
             include "edit_messages.php";

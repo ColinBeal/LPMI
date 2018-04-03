@@ -15,6 +15,7 @@
         include "entete_page.php";
       ?>
 
+
     <button class="collapsible">Description</button>
     <div class="content_coll">
       <br/>
@@ -125,6 +126,7 @@
     <script src="js/jquery.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/script_perso.js"></script>
+    <script src="ckeditor/ckeditor.js"></script>
 
   </body>
 </html>

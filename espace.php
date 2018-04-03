@@ -43,7 +43,7 @@
       <td>@fat</td>
     </tr>
     <tr>
-      
+
       <td>Larry</td>
       <td>the Bird</td>
       <td>@twitter</td>
