@@ -42,7 +42,7 @@
           $files1 = scandir("projet/projet_".$projet_id,1);
           if ($files1)
           {
-            echo $files1;
+            //echo $files1;
           }
           else
           {
@@ -83,7 +83,7 @@
             </div>
             <br/><br/>
             <div>
-              <p>".$desc."</p>
+              <p class='editor1' id='".$projet_id."' contenteditable='true'>".$desc."</p>
             </div>
             ";
          ?>
@@ -91,5 +91,13 @@
          <script src="js/jquery.js"></script>
          <script src="js/bootstrap.min.js"></script>
          <script src="js/script_perso.js"></script>
+         <?php
+         if ($_SESSION["type"]=="admin")
+         {
+           echo "
+           <script src='ckeditor/ckeditor.js'></script>
+           <script src='js/proj_desc_ck.js'></script>";
+         }
+         ?>
       </body>
 </html>
