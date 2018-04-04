@@ -83,7 +83,7 @@
             </div>
             <br/><br/>
             <div>
-              <p class='editor1' id='".$projet_id."' contenteditable='true'>".$desc."</p>
+              <p class='editor1' id='".$projet_id."'>".$desc."</p>
             </div>
             ";
          ?>

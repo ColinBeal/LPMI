@@ -39,7 +39,10 @@ nav{
   position : absolute;
   right: 3%;
 }
+.contenttitle{
+margin : 3%;
 
+}
 .maintitle{
   position: absolute;
   /*top: 32%;*/
@@ -139,7 +142,6 @@ input
     margin: 20px 0;
     margin-left: 5%;
     width: 90%;
-    border: 2px solid #22313F;
     text-align: left;
     outline: none;
     font-size: 15px;
@@ -147,7 +149,7 @@ input
 
 .active, .collapsible:hover {
     background-color: #22313F;
-    border: 2px solid #932C3E;
+
 }
 
 .collapsible:after {
@@ -171,7 +173,16 @@ input
     background-color: #f1f1f1;
 }
 
-select
-{
-  color : black;
+.espace{
+  background-color: #22313F;
+  height: 100%;
+  width: 100%;
+}
+
+.table {
+  margin-left: 2%;
+  margin-top: 2%;
+  background-color: #F5F5F5;
+  padding: 10px;
+  color:#22313F;
 }

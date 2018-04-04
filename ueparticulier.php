@@ -63,7 +63,7 @@
                   <div class='col-md-6 textecontent'>
                     <h3 class='underline' data-aos='fade-down'>".$row["nomM"]."</h3>
                     <br/>
-                    <p class='editor1' id='".$row["id"]."' data-aos='zoom-in-right' contenteditable='true'>".$row["descriptionM"]."</p>
+                    <p class='editor1' id='".$row["id"]."' data-aos='zoom-in-right'>".$row["descriptionM"]."</p>
                     <br/>
                     <p data-aos='fade'>
                       <a href='professeur.php' class='bleu underline'>
@@ -81,7 +81,7 @@
                   <div class='col-md-6 textecontent'>
                     <h3 class='underline' data-aos='fade-down'>".$row["nomM"]."</h3>
                     <br/>
-                    <p class='editor1' id='".$row["id"]."' data-aos='zoom-in-right' contenteditable='true'>".$row["descriptionM"]."</p>
+                    <p class='editor1' id='".$row["id"]."' data-aos='zoom-in-right'>".$row["descriptionM"]."</p>
                     <br/>
                       <a href='professeur.php' class='underline'>
                         <p data-aos='fade'> Professeur : ".$row["nomP"]."</p>

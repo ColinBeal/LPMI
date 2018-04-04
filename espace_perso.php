@@ -17,25 +17,32 @@
     include 'head.php';
   ?>
       <body>
-        <div id="login" class="row content-bleu">
+        <div class="container-fluid espace">
           <?php
-            include "all.php";
+            include "entete_page.php";
           ?>
-        </div>
-        <?php
-          if ($_SESSION["type"]=="admin")
-          {
-            include "edit_messages.php";
-          }
-          include "show_messages.php";
-        ?>
 
-          <div>
+      <div class="row">
+
+          <?php
+            include "show_messages.php";
+          ?>
+          <div class="col-md-8">
               <a href="depot.php"><p>Voir la Liste des Fichiers dans le Dépot</p></a>
           </div>
-          <div>
+          <div class="col-md-8">
               <a href="liste_projet.php"><p>Voir la liste Liste des Projets</p></a>
           </div>
+
+
+          <?php
+            if ($_SESSION["type"]=="admin")
+            {
+              include "edit_messages.php";
+            }
+          ?>
+        </div>
+      </div>
 
           <script src="js/jquery.js"></script>
           <script src="js/bootstrap.min.js"></script>

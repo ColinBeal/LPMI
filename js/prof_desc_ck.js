@@ -9,7 +9,7 @@ var edit = document.getElementsByClassName("editor1");
 var i;
     for (i = 0; i < edit.length; i++)
     {
-
+        edit[i].setAttribute("contenteditable", "true");
         edit[i].addEventListener("mouseenter", function()
         {
           var l = this.id;

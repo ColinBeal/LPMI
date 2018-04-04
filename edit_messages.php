@@ -10,7 +10,7 @@
   }
 ?>
 
-<form method="post" action="#">
+<form method="post" action="#" class="col-md-8">
   <textarea name="message" placeholder="Entrez votre message"></textarea>
   <input type="submit" name="submit" value="Envoyer" />
 </form>
