@@ -38,7 +38,7 @@
                 <div class='content-bleu row'>
                   <div class='col-md-6 textecontent' data-aos='fade-down'>
                     <h3 class='underline' data-aos='fade-down'>".$row["nomUE"]."</h3><br/>
-                    <p class='editor1' id='".$row["id"]."' data-aos='zoom-in-right' contenteditable='true'>".$row["descriptionUE"]."</p><br/>
+                    <p class='editor1' id='".$row["id"]."' name='ue' data-aos='zoom-in-right'>".$row["descriptionUE"]."</p><br/>
                     <p data-aos='fade'><a href=ueparticulier.php?id=".$row["id"]." class='underline'>Découvrir cette UE </a></p>
                   </div>
                   <div class='col-md-5 col-sm-12 col-xs-12 content-img' data-aos='zoom-in'>
@@ -56,7 +56,7 @@
               </div>
               <div class='col-md-6 textecontent'>
                 <h3 class='underline' data-aos='fade-down'>".$row["nomUE"]."</h3><br/>
-                <p class='editor1' id='".$row["id"]."' data-aos='zoom-in-left' contenteditable='true'>".$row["descriptionUE"]."</p><br/>
+                <p class='editor1' name='ue' id='".$row["id"]."'  data-aos='zoom-in-left'>".$row["descriptionUE"]."</p><br/>
                 <p data-aos='fade'><a href=ueparticulier.php?id=".$row["id"]." class='bleu underline'>Découvrir cette UE </a></p>
               </div>
             </div>
@@ -75,11 +75,11 @@
     <script src="js/bootstrap.min.js"></script>
     <script src="js/script_perso.js"></script>
     <?php
-    if ($_SESSION["type"]=="admin")
+    if (isset($_SESSION["type"]) && $_SESSION["type"]=="admin")
     {
       echo "
       <script src='ckeditor/ckeditor.js'></script>
-      <script src='js/ue_desc_ck.js'></script>";
+      <script src='js/desc_ck.js'></script>";
     }
     ?>
 

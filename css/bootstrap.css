@@ -115,7 +115,7 @@ select,
 textarea {
   margin: 0;
   font: inherit;
-  color: inherit;
+  /*color: inherit;*/
 }
 button {
   overflow: visible;
@@ -1607,6 +1607,7 @@ pre code {
   padding-left: 15px;
   margin-right: auto;
   margin-left: auto;
+  text-align: center;
 }
 .row {
   /*margin-right: -15px;*/

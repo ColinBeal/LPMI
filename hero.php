@@ -1,6 +1,6 @@
 <div id="hero">
 <div class="maintitle row">
-    <h1 class="underline"> Licence profesionnelle métiers de l'internet </h1>
+    <h1 class="underline"> Licence Profesionnelle des Métiers de l'Informatique </h1>
 <div class="col-md-9">
     </br>
     <p> At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et. </br>qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestia </p>

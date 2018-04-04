@@ -83,7 +83,7 @@
             </div>
             <br/><br/>
             <div>
-              <p class='editor1' id='".$projet_id."' contenteditable='true'>".$desc."</p>
+              <p class='editor1' name='proj' id='".$projet_id."' >".$desc."</p>
             </div>
             ";
          ?>
@@ -92,11 +92,11 @@
          <script src="js/bootstrap.min.js"></script>
          <script src="js/script_perso.js"></script>
          <?php
-         if ($_SESSION["type"]=="admin")
+         if (isset($_SESSION["type"]) && $_SESSION["type"]=="admin")
          {
            echo "
            <script src='ckeditor/ckeditor.js'></script>
-           <script src='js/proj_desc_ck.js'></script>";
+           <script src='js/desc_ck.js'></script>";
          }
          ?>
       </body>
