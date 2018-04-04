@@ -19,7 +19,7 @@
         <?php
           include "entete_page.php";
 
-          if ($_SESSION["type"]=="admin")
+          if (isset($_SESSION["type"]) && $_SESSION["type"]=="admin")
           {
             include "uploadprojet.php";
             include "formprojet.php";

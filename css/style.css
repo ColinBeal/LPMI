@@ -175,7 +175,8 @@ input
 
 .espace{
   background-color: #22313F;
-  height: 100%;
+  position: sticky;
+  min-height: 100%;
   width: 100%;
 }
 
@@ -185,4 +186,16 @@ input
   background-color: #F5F5F5;
   padding: 10px;
   color:#22313F;
+}
+
+.messages
+{
+  margin-bottom: 2%;
+  height:260px;
+  overflow-y: scroll;
+}
+
+textarea
+{
+  color : black;
 }

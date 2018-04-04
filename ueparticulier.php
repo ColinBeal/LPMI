@@ -63,7 +63,7 @@
                   <div class='col-md-6 textecontent'>
                     <h3 class='underline' data-aos='fade-down'>".$row["nomM"]."</h3>
                     <br/>
-                    <p class='editor1' id='".$row["id"]."' data-aos='zoom-in-right'>".$row["descriptionM"]."</p>
+                    <p class='editor1' id='".$row["id"]."' name='mat' data-aos='zoom-in-right'>".$row["descriptionM"]."</p>
                     <br/>
                     <p data-aos='fade'>
                       <a href='professeur.php' class='bleu underline'>
@@ -81,7 +81,7 @@
                   <div class='col-md-6 textecontent'>
                     <h3 class='underline' data-aos='fade-down'>".$row["nomM"]."</h3>
                     <br/>
-                    <p class='editor1' id='".$row["id"]."' data-aos='zoom-in-right'>".$row["descriptionM"]."</p>
+                    <p class='editor1' id='".$row["id"]."' name='mat' data-aos='zoom-in-right'>".$row["descriptionM"]."</p>
                     <br/>
                       <a href='professeur.php' class='underline'>
                         <p data-aos='fade'> Professeur : ".$row["nomP"]."</p>
@@ -108,11 +108,11 @@
     <script src="js/bootstrap.min.js"></script>
     <script src="js/script_perso.js"></script>
     <?php
-    if ($_SESSION["type"]=="admin")
+    if (isset($_SESSION["type"]) && $_SESSION["type"]=="admin")
     {
       echo "
       <script src='ckeditor/ckeditor.js'></script>
-      <script src='js/mat_desc_ck.js'></script>";
+      <script src='js/desc_ck.js'></script>";
     }
     ?>
 	</body>

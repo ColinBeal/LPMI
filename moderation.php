@@ -23,26 +23,13 @@
           ?>
 
       <div class="row">
-
+        <h1>Tableau de Bord Administrateur</h1>
           <?php
-            include "show_messages.php";
-          ?>
-          <div class="col-md-8">
-              <a href="depot.php"><p>Voir la Liste des Fichiers dans le Dépot</p></a>
-          </div>
-          <div class="col-md-8">
-              <a href="liste_projet.php"><p>Voir la liste Liste des Projets</p></a>
-          </div>
-
-
-          <?php
-            if (isset($_SESSION["type"]) && $_SESSION["type"]=="admin")
-            {
-              echo "<div class='col-md-8'>
-                      <a href='moderation.php'><p>Modérer les données du Site</p></a>
-                    </div>";
-              include "edit_messages.php";
-            }
+            include "mod_mess.php";
+            include "mod_prof.php";
+            echo "<br/>";
+            include "mod_user.php";
+            include "mod_proj.php";
           ?>
         </div>
       </div>
@@ -50,6 +37,7 @@
           <script src="js/jquery.js"></script>
           <script src="js/bootstrap.min.js"></script>
           <script src="js/script_perso.js"></script>
+          <script src="js/mod.js"></script>
 
       </body>
 </html>

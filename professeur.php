@@ -23,6 +23,10 @@
         </div>
         <?php
           include "entete_page.php";
+          if (isset($_SESSION["type"]) && $_SESSION["type"]=="admin")
+          {
+            include 'add_prof.php';
+          }
         ?>
 
 
@@ -38,8 +42,7 @@
                 <div class='content-bleu row'>
                   <div class='col-md-6 textecontent' data-aos='fade-down'>
                     <h3 class='underline' data-aos='fade-down'>".$row["nomP"]."</h3><br/>
-                    <p class='editor1' id='".$row["id"]."' data-aos='zoom-in-right'>".$row["descriptionP"]."</p><br/>
-                    <p data-aos='fade'><a href=ueparticulier.php?id=".$row["id"]." class='underline'>Découvrir cette UE </a></p>
+                    <p class='editor1' id='".$row["id"]."' name='prof' data-aos='zoom-in-right'>".$row["descriptionP"]."</p><br/>
                   </div>
                   <div class='col-md-5 col-sm-12 col-xs-12 content-img' data-aos='zoom-in'>
                     <img src='images/lpmi.png' alt='LPMI' class='img-responsive'>
@@ -56,8 +59,7 @@
               </div>
               <div class='col-md-6 textecontent'>
                 <h3 class='underline' data-aos='fade-down'>".$row["nomP"]."</h3><br/>
-                <p class='editor1' id='".$row["id"]."' data-aos='zoom-in-left'>".$row["descriptionP"]."</p><br/>
-                <p data-aos='fade'><a href=ueparticulier.php?id=".$row["id"]." class='bleu underline'>Découvrir cette UE </a></p>
+                <p class='editor1' id='".$row["id"]."' name='prof' data-aos='zoom-in-left'>".$row["descriptionP"]."</p><br/>
               </div>
             </div>
         		";
@@ -75,11 +77,11 @@
     <script src="js/bootstrap.min.js"></script>
     <script src="js/script_perso.js"></script>
     <?php
-    if ($_SESSION["type"]=="admin")
+    if (isset($_SESSION["type"]) && $_SESSION["type"]=="admin")
     {
       echo "
       <script src='ckeditor/ckeditor.js'></script>
-      <script src='js/prof_desc_ck.js'></script>";
+      <script src='js/desc_ck.js'></script>";
     }
     ?>
 
