@@ -1,10 +1,9 @@
 <?php
   session_start();
-
   include "checkreset.php";
   include 'connectdb.php' ;
+  include "all.php";
 ?>
-
 <!DOCTYPE html>
 <html lang="fr">
   <?php
@@ -17,7 +16,7 @@
     <div class=" connexion col-md-6">
       <img  src="images/lpmi.png" alt="LPMI" class="img-responsive">
       <?php
-        include "all.php";
+        include "form_connect.php";
       ?>
       </div>
     </div>

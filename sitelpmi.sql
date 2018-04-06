@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Hôte : 127.0.0.1
--- Généré le :  jeu. 29 mars 2018 à 14:36
+-- Généré le :  ven. 06 avr. 2018 à 10:47
 -- Version du serveur :  5.7.17
 -- Version de PHP :  7.1.3
 
@@ -41,22 +41,22 @@ CREATE TABLE `matiere` (
 --
 
 INSERT INTO `matiere` (`id`, `nomM`, `descriptionM`, `id_ue`, `id_prof`) VALUES
-(1, 'Systemes', '', 1, 4),
-(2, 'Reseau', '', 1, 3),
-(3, 'Anglais', '', 8, 8),
-(4, 'Connaissance de l\'entreprise', '', 8, 9),
-(5, 'Developpement Web Mobile', '', 6, 5),
-(6, 'Stockage des Données', '', 5, 6),
-(7, 'Génie Logiciel', '', 7, 4),
-(8, 'Génie Logiciel', '', 7, 1),
-(9, 'Projets Tutoré', '', 9, 0),
-(10, 'Algorithmie et Programmation Orientée Objet', '', 2, 2),
-(11, 'Interfaces Graphiques Environnement Java', '', 2, 4),
-(12, 'Technologies pour le Web - Reponsive', '', 3, 5),
-(13, 'Technologies pour le Web - XML', '', 3, 11),
-(14, 'Methodes et Outils de Programmation pour le Web', '', 4, 12),
-(15, 'Genie Logiciel', '', 7, 12),
-(16, 'Methodes et Outils de Programmation pour le Web - CMS', '', 4, 10),
+(1, 'Systemes', 'Enterdum et malesuada fames ac ante ipsum primis in faucibus. Quisque convallis est et est gravida fermentum. Nullam porttitor ipsum ac dolor porttitor, vitae venenatis eros maximus. Etiam urna nisl, dapibus ut pharetra vel, varius ut tortor. Quisque gravida velit vel lorem finibus, id tincidunt dui rutrum. Quisque commodo risus mattis, mollis enim nec, ultricies nisl.', 1, 4),
+(2, 'Reseau', 'Sed fringilla eu tortor pretium lobortis. Suspendisse sollicitudin lorem a nibh viverra consequat. Pellentesque nisl leo, condimentum et arcu id, euismod finibus ante. Vivamus eget ornare elit. Aenean ac mollis ex.', 1, 3),
+(3, 'Anglais', 'In iaculis, quam ac vestibulum vulputate, elit metus pulvinar nunc, sed ultrices massa enim id tortor. Morbi sollicitudin sodales lacus, lobortis aliquam nibh gravida egestas. Sed sit amet purus tortor. Sed nec quam mauris. Suspendisse pellentesque erat sit amet arcu dignissim semper.', 8, 8),
+(4, 'Connaissance de l\'entreprise', 'Interdum et malesuada fames ac ante ipsum primis in faucibus. Quisque convallis est et est gravida fermentum. Nullam porttitor ipsum ac dolor porttitor, vitae venenatis eros maximus. Etiam urna nisl, dapibus ut pharetra vel, varius ut tortor. Quisque gravida velit vel lorem finibus, id tincidunt dui rutrum. Quisque commodo risus mattis, mollis enim nec, ultricies nisl.', 8, 9),
+(5, 'Developpement Web Mobile', 'Donec laoreet pretium libero, eu eleifend risus ullamcorper ac. Nam ut tempus enim. Pellentesque aliquam nisl nec dui euismod dapibus eget ac quam. Aenean pharetra, neque eget luctus venenatis, urna turpis feugiat neque, in euismod turpis quam a lectus.', 6, 5),
+(6, 'Stockage des Données', 'Sed fringilla eu tortor pretium lobortis. Suspendisse sollicitudin lorem a nibh viverra consequat. Pellentesque nisl leo, condimentum et arcu id, euismod finibus ante. Vivamus eget ornare elit. Aenean ac mollis ex.', 5, 6),
+(7, 'Génie Logiciel', 'In iaculis, quam ac vestibulum vulputate, elit metus pulvinar nunc, sed ultrices massa enim id tortor. Morbi sollicitudin sodales lacus, lobortis aliquam nibh gravida egestas. Sed sit amet purus tortor. Sed nec quam mauris. Suspendisse pellentesque erat sit amet arcu dignissim semper.', 7, 4),
+(8, 'Génie Logiciel', 'Interdum et malesuada fames ac ante ipsum primis in faucibus. Quisque convallis est et est gravida fermentum. Nullam porttitor ipsum ac dolor porttitor, vitae venenatis eros maximus. Etiam urna nisl, dapibus ut pharetra vel, varius ut tortor. Quisque gravida velit vel lorem finibus, id tincidunt dui rutrum. Quisque commodo risus mattis, mollis enim nec, ultricies nisl.', 7, 1),
+(9, 'Projets Tutoré', 'Donec laoreet pretium libero, eu eleifend risus ullamcorper ac. Nam ut tempus enim. Pellentesque aliquam nisl nec dui euismod dapibus eget ac quam. Aenean pharetra, neque eget luctus venenatis, urna turpis feugiat neque, in euismod turpis quam a lectus.', 9, 0),
+(10, 'Algorithmie et Programmation Orientée Objet', 'Sed fringilla eu tortor pretium lobortis. Suspendisse sollicitudin lorem a nibh viverra consequat. Pellentesque nisl leo, condimentum et arcu id, euismod finibus ante. Vivamus eget ornare elit. Aenean ac mollis ex.', 2, 2),
+(11, 'Interfaces Graphiques Environnement Java', 'In iaculis, quam ac vestibulum vulputate, elit metus pulvinar nunc, sed ultrices massa enim id tortor. Morbi sollicitudin sodales lacus, lobortis aliquam nibh gravida egestas. Sed sit amet purus tortor. Sed nec quam mauris. Suspendisse pellentesque erat sit amet arcu dignissim semper.', 2, 4),
+(12, 'Technologies pour le Web - Reponsive', 'Interdum et malesuada fames ac ante ipsum primis in faucibus. Quisque convallis est et est gravida fermentum. Nullam porttitor ipsum ac dolor porttitor, vitae venenatis eros maximus. Etiam urna nisl, dapibus ut pharetra vel, varius ut tortor. Quisque gravida velit vel lorem finibus, id tincidunt dui rutrum. Quisque commodo risus mattis, mollis enim nec, ultricies nisl.', 3, 5),
+(13, 'Technologies pour le Web - XML', 'Donec laoreet pretium libero, eu eleifend risus ullamcorper ac. Nam ut tempus enim. Pellentesque aliquam nisl nec dui euismod dapibus eget ac quam. Aenean pharetra, neque eget luctus venenatis, urna turpis feugiat neque, in euismod turpis quam a lectus.', 3, 11),
+(14, 'Methodes et Outils de Programmation pour le Web', 'Sed fringilla eu tortor pretium lobortis. Suspendisse sollicitudin lorem a nibh viverra consequat. Pellentesque nisl leo, condimentum et arcu id, euismod finibus ante. Vivamus eget ornare elit. Aenean ac mollis ex.', 4, 12),
+(15, 'Genie Logiciel', 'In iaculis, quam ac vestibulum vulputate, elit metus pulvinar nunc, sed ultrices massa enim id tortor. Morbi sollicitudin sodales lacus, lobortis aliquam nibh gravida egestas. Sed sit amet purus tortor. Sed nec quam mauris. Suspendisse pellentesque erat sit amet arcu dignissim semper.', 7, 12),
+(16, 'Methodes et Outils de Programmation pour le Web - CMS', 'Interdum et malesuada fames ac ante ipsum primis in faucibus. Quisque convallis est et est gravida fermentum. Nullam porttitor ipsum ac dolor porttitor, vitae venenatis eros maximus. Etiam urna nisl, dapibus ut pharetra vel, varius ut tortor. Quisque gravida velit vel lorem finibus, id tincidunt dui rutrum. Quisque commodo risus mattis, mollis enim nec, ultricies nisl.', 4, 10),
 (17, 'Technologies pour le Web ', '', 3, 7);
 
 -- --------------------------------------------------------
@@ -77,12 +77,11 @@ CREATE TABLE `messages` (
 --
 
 INSERT INTO `messages` (`id`, `auteur`, `message`, `date`) VALUES
-(1, 'admin', 'coucou', '2018-03-29'),
-(2, 'admin', 'coucou', '2018-03-15'),
-(3, 'micou', 'kshkshkshkjhskjhskh', '2018-03-13'),
-(4, 'admin', 'qzdqzdqdqzdqzdq', '2017-09-26'),
-(5, 'admin', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent pharetra rhoncus enim non iaculis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean lobortis urna sit amet lectus varius, ut facilisis risus tristique. Sed a blandit ex, ut interdum lorem. Donec a orci nec neque euismod interdum. Nam posuere finibus erat, eget fringilla libero tincidunt auctor. Quisque luctus risus sit amet arcu iaculis posuere. In nulla nulla, malesuada ut feugiat sed, imperdiet ut tellus. Aenean vehicula, urna nec sollicitudin vehicula, est felis cursus quam, in venenatis turpis neque id erat. Suspendisse est ante, ultricies sed interdum ac, blandit a magna. Phasellus et fringilla dolor. Phasellus eget convallis tortor. Donec quis aliquet nulla. Nulla facilisi. Sed nec fringilla arcu.\r\n\r\n1 paragraphes, 118 mots, 793 caractères de Lorem Ipsum généré', '2018-09-14'),
-(6, 'dernier', 'dqzddddddddddddddddddd', '2018-03-07');
+(7, 'admin', 'bonjour vous avez fini lannée', '2018-01-01'),
+(19, 'admin', 'c\'est l\'heure d\'aller manger', '2018-04-04'),
+(20, 'admin', 'bonjour vous êtes encore en cours', '2018-04-04'),
+(21, 'admin', 'je suis l\'admin écouter moi', '2018-04-04'),
+(22, 'admin', 'j’espère avoir une bonne note', '2018-04-04');
 
 -- --------------------------------------------------------
 
@@ -101,19 +100,19 @@ CREATE TABLE `professeur` (
 --
 
 INSERT INTO `professeur` (`id`, `nomP`, `descriptionP`) VALUES
-(1, 'Marinette Savonnet', ''),
-(2, 'Olivier Bailleux', ''),
-(3, 'Olivier Togni', ''),
-(4, 'Dominique Micollet', ''),
-(5, 'Ana-Maria Roxin', ''),
-(6, 'Thierry Grison', ''),
-(7, 'Sandrine Lanquetin', ''),
-(8, 'Nathalie Vassileff', ''),
-(0, 'Autonomie', ''),
-(12, 'Pierre Laforet', 'Intervenant Exterieur'),
-(10, 'Marc Mebtouche', 'Intervenant Exterieur'),
-(11, 'Emeline Dorey', 'Intervenante Exterieur'),
-(9, 'Franck Hendel', '');
+(1, 'Marinette Savonnet', 'Mauris bibendum mollis euismod. Maecenas lacus dolor, aliquam at erat in, fermentum fringilla justo. Morbi blandit massa et convallis fringilla. Etiam consequat placerat pretium. Aliquam vitae venenatis est. Ut eget odio nibh. Duis semper vitae felis in scelerisque. Maecenas ultrices dui ut feugiat dictum. Nullam maximus ut tortor eu viverra.'),
+(2, 'Olivier Bailleux', 'Integer nibh magna, mattis vel dui id, viverra rhoncus augue. Mauris elementum posuere nibh vel scelerisque. Nam a ullamcorper justo. Fusce ultrices justo turpis, ac dapibus nulla hendrerit tristique. Praesent at sapien ex. Sed dignissim vestibulum magna, nec varius turpis ornare lacinia. Suspendisse sollicitudin ex et erat aliquam cursus vitae in neque. Aliquam ac commodo ante. Morbi non elit eget nulla vehicula ornare. Etiam lacinia maximus lacinia.'),
+(3, 'Olivier Togni', 'Aenean interdum, ante eget pulvinar sodales, sapien orci faucibus justo, ut egestas erat leo ac elit. Vestibulum pharetra ligula nibh, sed lobortis neque volutpat at. Duis tincidunt tincidunt purus, at blandit lectus volutpat sit amet. Pellentesque vitae sem tristique, interdum purus vitae, luctus felis. Sed vel nisi cursus, facilisis mauris ac, accumsan turpis. In pulvinar ultrices sodales.'),
+(4, 'Dominique Micollet', 'Vivamus sollicitudin tempus eros. Aliquam risus lectus, dictum ac dignissim eu, finibus vitae nisl. Sed aliquam mattis est, nec suscipit nibh ullamcorper at. Curabitur at gravida ante, eget pretium lectus. Etiam vehicula sem non lobortis blandit. Aenean cursus ante nec est scelerisque, nec varius ligula fermentum. Sed tristique, turpis et dictum suscipit, tortor nisi tincidunt risus, a vulputate lacus odio id mi. Proin rutrum vestibulum eros at volutpat.'),
+(5, 'Ana-Maria Roxin', 'Maecenas in accumsan mi. Vestibulum id leo porttitor, dignissim dui ornare, vehicula elit. Donec et turpis odio. Curabitur tempus ante id lectus rhoncus ornare. Morbi dui tellus, iaculis sed porttitor et, eleifend at ipsum. Pellentesque ut nibh at velit pulvinar suscipit. Vestibulum finibus at leo quis blandit. Sed pharetra, mauris sed aliquam scelerisque, dolor dui accumsan leo, non scelerisque orci mauris quis mauris. Donec viverra est erat.'),
+(6, 'Thierry Grison', 'In fringilla fermentum mi, ac cursus ante maximus quis. Donec risus neque, dictum et magna at, varius mattis neque. In ex neque, fermentum sit amet accumsan convallis, dictum non lectus. In non imperdiet tellus, et condimentum orci. Praesent dapibus cursus elementum. Maecenas vitae ipsum imperdiet odio egestas ultricies.'),
+(7, 'Sandrine Lanquetin', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas gravida tincidunt auctor. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Integer mattis nunc et libero pellentesque auctor. Ut semper finibus nisi, non feugiat nisi. Cras lacinia mi mi, sed gravida erat mattis eget. Integer mattis eu elit vel tincidunt. Interdum et malesuada fames ac ante ipsum primis in faucibus. Phasellus luctus blandit molestie.'),
+(8, 'Nathalie Vassileff', 'Fusce tempor nunc eget suscipit efficitur. Quisque id turpis non eros iaculis fringilla et quis erat. Quisque vitae neque nec tortor cursus varius. Quisque finibus, felis in sodales pretium, nisl lorem blandit diam, ut efficitur ex elit vitae dolor. Phasellus convallis interdum placerat. Cras a nisl a eros condimentum blandit. '),
+(0, 'Autonomie', 'Broin tristique risus sed augue condimentum, ut tempus risus vestibulum. Sed dictum vulputate metus. Vestibulum dapibus risus sit amet hendrerit condimentum. Maecenas fringilla mi vitae nulla consequat viverra. Donec iaculis facilisis auctor. Nullam congue ex vulputate ante imperdiet fringilla. Mauris finibus felis non sodales tincidunt. Nam sodales, lorem vel dictum faucibus, nulla est consectetur lectus, eu facilisis odio elit nec mi. Vestibulum bibendum blandit ipsum vitae semper. Cras pretium risus quis ex accumsan convallis. Etiam semper nisi at elit venenatis suscipit.'),
+(12, 'Pierre Laforet', 'Duis libero dui, dapibus vulputate sem at, suscipit lobortis dui. Suspendisse vulputate erat ut lectus ullamcorper, at egestas mi placerat. Curabitur eros erat, facilisis quis ornare et, laoreet in lorem. Cras sit amet dignissim nisi.'),
+(10, 'Marc Mebtouche', 'ed efficitur nibh tortor, non pharetra tortor posuere quis. Phasellus eget ullamcorper velit, sit amet vestibulum felis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec id velit blandit, rhoncus nisl id, rutrum ante. Etiam quis urna id nibh pretium iaculis. Suspendisse aliquet tortor vitae justo gravida dapibus.'),
+(11, 'Emeline Dorey', 'Nam lorem turpis, mattis quis venenatis sit amet, ornare a arcu. Nunc ut imperdiet justo. Vivamus mollis mi purus, in semper mi accumsan eget. Sed quis ligula orci. Nam sollicitudin risus a orci tincidunt congue. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.'),
+(9, 'Franck Hendel', 'Integer condimentum vestibulum viverra. Ut eget lacus nec mauris cursus scelerisque. Praesent mattis fermentum sapien, eget posuere odio semper euismod. Praesent id lectus nec sapien tristique rutrum. Aliquam nec eros tempor, aliquam augue a, auctor ante. Vestibulum sit amet ante sit amet arcu accumsan rutrum. In faucibus magna at nibh tempor, vel placerat orci varius. Donec bibendum fermentum nisi. Proin et scelerisque eros, in facilisis elit. Phasellus libero erat, porttitor ac elit at, eleifend pretium tortor.');
 
 -- --------------------------------------------------------
 
@@ -132,8 +131,7 @@ CREATE TABLE `projet` (
 --
 
 INSERT INTO `projet` (`id`, `nom`, `description`) VALUES
-(6, 'halo', 'le projet qui consiste a aimer halo sous toute ses formes'),
-(3, 'cars', 'le projet des voiture qui roulent beaucoup');
+(1, 'project cars', 'un projet avec pleins de voitures trop geniales');
 
 -- --------------------------------------------------------
 
@@ -152,10 +150,10 @@ CREATE TABLE `unite_enseignement` (
 --
 
 INSERT INTO `unite_enseignement` (`id`, `nomUE`, `descriptionUE`) VALUES
-(1, 'UE1', 'Unité d\'enseignement 1, elle regroupe 2 matières :\r\n <br/><br/> \"Systèmes\" <br/><br/> \"Réseaux\"'),
-(2, 'UE2', 'Unité d\'enseignement 2, elle regroupe 2 matières : <br/><br/>\"Algorithmie et Programmation Orientée Objet\" <br/><br/> \"Interfaces Graphiques Environnement Java\"'),
-(3, 'UE3', 'Unité d\'enseignement 3, elle regroupe 3 matières, toutes sous le nom de : <br/><br/> \"Technologies pour le Web\"'),
-(4, 'UE4', 'Unité d\'enseignement 4, elle regroupe 2 matières toutes sous le nom de : <br/><br/> \"Methodes et Outils de Programmation pour le Web\"'),
+(1, 'UE1', 'Unité d\'enseignement 1, elle regroupe 2 matières :<br><br>\'Systèmes\'<br><br>\'Réseaux\'.'),
+(2, 'UE2', 'Unité d\'enseignement 2, elle regroupe 2 matières :<br><br>\"Algorithmie et Programmation Orientée Objet\"<br><br>\"Interfaces Graphiques Environnement Java\"'),
+(3, 'UE3', 'Unité d\'enseignement 3, elle regroupe 3 matières, toutes sous le nom de :<br><br>\"Technologies pour le Web\"'),
+(4, 'UE4', 'Unité d\'enseignement 4, elle regroupe 2 matières toutes sous le nom de :<br><br>\"Methodes et Outils de Programmation pour le Web\"'),
 (5, 'UE5', 'Unité d\'enseignement 5, elle est composée d\'une matière nommée <br/><br/> \"Stockage des Données\"'),
 (6, 'UE6', 'Unité d\'enseignement 6, elle est composée d\'une matière nommée <br/><br/> \"Developpement Web Mobile\"'),
 (7, 'UE7', 'Unité d\'enseignement 7, elle regroupe 3 matières, toutes sous le nom de : <br/><br/> \"Génie Logiciel\"'),
@@ -181,8 +179,9 @@ CREATE TABLE `utilisateurs` (
 --
 
 INSERT INTO `utilisateurs` (`id`, `login`, `pass`, `email`, `type`) VALUES
-(3, 'michou', '123456', '', 'etudiant'),
-(5, 'mb759225', 'jd80uq85', NULL, 'etudiant');
+(11, 'admin', 'admin', NULL, 'admin'),
+(10, 'etudiant', 'etudiant', NULL, 'etudiant'),
+(12, 'visiteur', 'visiteur', NULL, 'visiteur');
 
 --
 -- Index pour les tables déchargées
@@ -239,12 +238,12 @@ ALTER TABLE `matiere`
 -- AUTO_INCREMENT pour la table `messages`
 --
 ALTER TABLE `messages`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=25;
 --
 -- AUTO_INCREMENT pour la table `professeur`
 --
 ALTER TABLE `professeur`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=16;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=18;
 --
 -- AUTO_INCREMENT pour la table `projet`
 --
@@ -259,7 +258,7 @@ ALTER TABLE `unite_enseignement`
 -- AUTO_INCREMENT pour la table `utilisateurs`
 --
 ALTER TABLE `utilisateurs`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;COMMIT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;

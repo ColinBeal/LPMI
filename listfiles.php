@@ -25,7 +25,13 @@
                   <div class='content_coll'>";
                   for ($i=0; $i < count($files1)-2; $i++)
                   {
-                    echo "<a href='".$path."/".$files1[$i]."'><p>".$files1[$i]."</p></a>";
+
+                    echo "<div class='row'><div class='col-md-9'><a href='".$path."/".$files1[$i]."'><p class='txtblack'>".$files1[$i]."</p></a></div>";
+                    if (isset($_SESSION["type"]) && $_SESSION["type"]=="admin")
+                    {
+                      echo "<div class='col-md-3'><button class='suppr' type='button' name='file' id='".$path."/".$files1[$i]."'>Supprimer</button></div>";
+                    }
+                    echo "</div>";
                   }
             echo "</div>";
         }

@@ -6,7 +6,7 @@
   if (mysqli_num_rows($result) > 0)
   {
     echo "
-    <div class='col-md-8 messages'>
+    <div class='col-md-6 messages'>
       <table class='table'>
         <thead>
           <tr>
