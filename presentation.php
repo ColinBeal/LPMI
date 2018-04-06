@@ -15,7 +15,18 @@
         include "entete_page.php";
       ?>
 
+      <div class="contenttitle row">
+            <h1 class="underline"> Présentation de la licence </h1>
+        <div class="col-md-9">
+          <p id="editor" contenteditable="true">
+            <br/>
+            <strong>Soyez acteur de la transformation numérique de notre société</strong>
+            <br/><br/>
+            La Licence Professionnelle Applications Web forme depuis 2001 des assistants ingénieurs et des cadres spécialisés dans le domaine de l’Internet. Il s’agit majoritairement de développeurs spécialistes des technologies logicielles pour la construction d'applications Web et Web mobile (applications réparties avec une forte interaction utilisateur).
 
+          </div>
+        </div>
+<div class="content">
     <button class="collapsible">Description</button>
     <div class="content_coll">
       <br/>
@@ -121,7 +132,7 @@
       <br/>
     </div>
 
-
+</div>
 
     <script src="js/jquery.js"></script>
     <script src="js/bootstrap.min.js"></script>

@@ -175,8 +175,7 @@ input
 
 .espace{
   background-color: #22313F;
-  position: sticky;
-  min-height: 100%;
+  height: 100%;
   width: 100%;
 }
 
@@ -194,13 +193,11 @@ input
   height:260px;
   overflow-y: scroll;
 }
+.txtblack{
+  color: #22313F;
+}
 
 textarea
 {
   color : black;
-}
-
-.txtblack
-{
-  color:black;
 }
