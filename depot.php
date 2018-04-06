@@ -36,6 +36,7 @@
           <script src="js/jquery.js"></script>
           <script src="js/bootstrap.min.js"></script>
           <script src="js/script_perso.js"></script>
+          <script src="js/mod.js"></script>
 
       </body>
 </html>
